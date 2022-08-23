@@ -1,0 +1,70 @@
+
+@theme-color: #1890ff;
+
+@black: #000;
+
+@primary-color: @theme-color;
+@primary-color-hover: fade(@primary-color, 50%);
+@primary-color-active: fade(@primary-color, 70%);
+
+
+@text-color: fade(@black, 85%);
+@text-color-secondary: fade(@black, 45%);
+
+
+@font-size-base: 14px;
+@font-size-lg: @font-size-base + 2px;
+@font-size-sm: 12px;
+@heading-1-size: ceil(@font-size-base * 2.71);
+@heading-2-size: ceil(@font-size-base * 2.14);
+@heading-3-size: ceil(@font-size-base * 1.71);
+@heading-4-size: ceil(@font-size-base * 1.42);
+@heading-5-size: ceil(@font-size-base * 1.14);
+
+@line-height-base: 1.5715;
+@border-radius-base: 2px;
+@border-radius-sm: @border-radius-base;
+
+
+// vertical paddings
+@padding-lg: 24px; // containers
+@padding-md: 16px; // small containers and buttons
+@padding-sm: 12px; // Form controls and items
+@padding-xs: 8px; // small items
+@padding-xss: 4px; // more small
+
+// vertical margins
+@margin-lg: 24px; // containers
+@margin-md: 16px; // small containers and buttons
+@margin-sm: 12px; // Form controls and items
+@margin-xs: 8px; // small items
+@margin-xss: 4px; // more small
+
+
+// LINK
+@link-color: @primary-color;
+@link-hover-color: fade(@link-color, 50%);
+@link-active-color: fade(@link-color, 70%);
+@link-decoration: none;
+@link-hover-decoration: none;
+@link-focus-decoration: none;
+@link-focus-outline: 0;
+
+// Disabled states
+@disabled-color: fade(#000, 25%);
+
+
+// Shadow
+@shadow-color: rgba(0, 0, 0, 0.15);
+@shadow-color-inverse: @component-background;
+@box-shadow-base: @shadow-2;
+@shadow-1-up: 0 -6px 16px -8px rgba(0, 0, 0, 0.08), 0 -9px 28px 0 rgba(0, 0, 0, 0.05),
+  0 -12px 48px 16px rgba(0, 0, 0, 0.03);
+@shadow-1-down: 0 6px 16px -8px rgba(0, 0, 0, 0.08), 0 9px 28px 0 rgba(0, 0, 0, 0.05),
+  0 12px 48px 16px rgba(0, 0, 0, 0.03);
+@shadow-1-left: -6px 0 16px -8px rgba(0, 0, 0, 0.08), -9px 0 28px 0 rgba(0, 0, 0, 0.05),
+  -12px 0 48px 16px rgba(0, 0, 0, 0.03);
+@shadow-1-right: 6px 0 16px -8px rgba(0, 0, 0, 0.08), 9px 0 28px 0 rgba(0, 0, 0, 0.05),
+  12px 0 48px 16px rgba(0, 0, 0, 0.03);
+@shadow-2: 0 3px 6px -4px rgba(0, 0, 0, 0.12), 0 6px 16px 0 rgba(0, 0, 0, 0.08),
+  0 9px 28px 8px rgba(0, 0, 0, 0.05);
